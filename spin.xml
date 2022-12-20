@@ -120,87 +120,81 @@
         <div class='row'>
   				<!-- *** ARTICLE POST *** -->
         	<div class='col-lg-8'>
-            <div class='card mb-3'><div class='card-body'>
-              <!-- *** TITLE POST *** -->
-              <div id='article_title'/>
-  						<!-- *** CONTENT POST *** -->
-              <div id='article_post'>
-								<div id='article_ji'/>
-	              <div class='row'>
-									<div class='col-md-12' style='margin-bottom:20px;'>
-										<!-- *** SLOT ARTICLE 1 *** -->
-										<center><script src='//kinan.pages.dev/afpost.js' type='text/javascript'/></center>
+            <div class='card mb-3'>
+            	<div class='card-body'>
+	              <!-- *** TITLE POST *** -->
+	              <div id='article_title'/>
+	  						<!-- *** CONTENT POST *** -->
+	              <div id='article_post'>
+									<div id='article_ji'/>
+		              <div class='row'>
+										<div class='col-md-12' style='margin-bottom:20px;'>
+											<!-- *** SLOT ARTICLE 1 *** -->
+											<center><script src='//kinan.pages.dev/afpost.js' type='text/javascript'/></center>
+										</div>
 									</div>
-								</div>
-	              <div id='article_ro'/>
-	              <div class='row'>
-									<div class='col-md-12' style='margin-bottom:20px;'>
-										<!-- *** SLOT ARTICLE 2 *** -->
+		              <div id='article_ro'/>
+		              <div class='row'>
+										<div class='col-md-12' style='margin-bottom:20px;'>
+											<!-- *** SLOT ARTICLE 2 *** -->
+										</div>
 									</div>
-								</div>
-	              <div id='article_lu'/>
-	              <div class='row'>
-									<div class='col-md-12' style='margin-bottom:20px;'>
-										<!-- *** SLOT ARTICLE 3 *** -->
-										<center><script src='//kinan.pages.dev/bepost.js' type='text/javascript'/></center>
+		              <div id='article_lu'/>
+		              <div class='row'>
+										<div class='col-md-12' style='margin-bottom:20px;'>
+											<!-- *** SLOT ARTICLE 3 *** -->
+											<center><script src='//kinan.pages.dev/bepost.js' type='text/javascript'/></center>
+										</div>
 									</div>
-								</div>
-		            <div id='article_end'/>
+			            <div id='article_end'/>
+	              </div>
+	              <!-- *** RELATED POST *** -->
+	              <div id='article_related'/>
               </div>
-              
-  				<!-- *** RELATED POST *** -->
-              	<div id='article_related'/>
-              
-            </div></div>
-        </div>
-      
-  		<!-- *** SIDEBAR POST *** -->
-        <div class='col-lg-4'>
-            <div class='card mb-3'><div class='card-body'>
-              
-				<div class='row'>
-					<div class='col-md-12' style='margin-bottom:20px;'>
-						<!-- *** SLOT SIDEBAR TOP *** -->
-						<center><script src='//kinan.pages.dev/sidebar.js' type='text/javascript'/></center>
-					</div>
-				</div>
-              
+            </div>
+        	</div>
+      		<!-- *** SIDEBAR POST *** -->
+        	<div class='col-lg-4'>
+            <div class='card mb-3'>
+            	<div class='card-body'>
+	              <div class='row'>
+									<div class='col-md-12' style='margin-bottom:20px;'>
+										<!-- *** SLOT SIDEBAR TOP *** -->
+										<center><script src='//kinan.pages.dev/sidebar.js' type='text/javascript'/></center>
+									</div>
+								</div>
               	<div id='sidebar_post'>
                 	<div class='list-group' id='linksbar'/>
               	</div>
-              
-				<div class='row'>
-					<div class='col-md-12' style='margin-bottom:20px;'>
-						<!-- *** SLOT SIDEBAR BOTTOM *** -->
-					</div>
-				</div>
-              
-            </div></div>
-        </div>
-      
-    </div>  
-
-	</b:if>
-      
-	</b:if> 
-        <!-- test mentah end -->
-        <!-- body kiri start -->
-        <div class='col-lg-8'>
-              <div id='article_title'/>
-              <div id='article_post'>
-              <div id='article_ji'/>
-          
+	              <div class='row'>
+									<div class='col-md-12' style='margin-bottom:20px;'>
+									<!-- *** SLOT SIDEBAR BOTTOM *** -->
+									</div>
+								</div>
               </div>
-        </div>  
-        <!-- body kiri end -->
-        <!-- body kanan aka sidebar start -->
-        <div class='col-lg-4'>
-          KANAN
-        </div>
-        <!-- body kanan aka sidebar end -->
+            </div>
+        	</div>
+     		</div>
+				</b:if>
+      </b:if> 
       </div>
     </div>
     <!-- main body end -->
+    <!-- footer start -->
+    <footer class='text-muted py-3 mt-4 border-top'>
+    <div class='container'>
+      <p class='text-center'>
+        Copyright &#169; 2022 <data:blog.title/>&#65372;
+        <a href='/'>Home</a>&#65372;
+        <a href='/search/q=privacy-policy_pages' target='_blank'>Privacy Policy</a>&#65372;
+        <a href='/search/q=dmca_pages'>DMCA</a>&#65372;
+        <a href='/search/q=copyright_pages' target='_blank'>Copyright</a>&#65372;
+        <a href='/search/q=contact-us_pages' target='_blank'>Contact Us</a>&#65372;
+        Designed with &#10084;&#65039; by Ricky Chuang
+      </p>
+    </div>
+  	</footer>
+  	<!-- footer end -->
   </body>
 <b:if cond='data:view.search.query'>
   <script type='text/javascript'>const ifkey = &#39;<data:view.search.query/>&#39;;</script>
