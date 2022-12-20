@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+  
+  <head>
+    <!-- meta start -->
+    <meta charset='utf-8'/>
+    <meta content='text/html;charset=UTF-8' http-equiv='Content-Type'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <!-- meta end -->
+    <!-- meta title start -->
+	<b:if cond='data:view.search.query'>
+	<link expr:href='data:blog.homepageUrl + &quot;search/q=&quot; + data:view.search.query' rel='canonical'/>
+
+	<b:else/>
+	<link expr:href='data:blog.canonicalUrl' rel='canonical'/>  
+	</b:if>
+	<b:if cond='data:blog.pageType == &quot;index&quot;'>
+		<b:if cond='data:view.isLabelSearch'>
+			<title><data:view.search.label/></title>
+		<b:elseif cond='data:view.search.query'/>
+			<b:if cond='data:view.search.query == &quot;dmca_pages&quot;'>
+				<title>DMCA for <data:blog.title/></title>
+			<b:elseif cond='data:view.search.query == &quot;copyright_pages&quot;'/>
+				<title>Copyright for <data:blog.title/></title>
+			<b:elseif cond='data:view.search.query == &quot;contact-us_pages&quot;'/>
+				<title>Contact for <data:blog.title/></title>
+			<b:elseif cond='data:view.search.query == &quot;privacy-policy_pages&quot;'/>
+				<title>Privacy Policy for <data:blog.title/></title>
+			<b:else/>
+				<!-- search title -->
+				<title><data:view.search.query/> - <data:blog.title/></title>
+			</b:if>
+		<b:else/>
+	    	<title><data:blog.pageTitle/></title>
+		</b:if>	
+	<b:else/>
+	    <b:if cond='data:blog.pageType == &quot;item&quot;'>
+	    	<title><data:view.title.escaped/> | <data:blog.title/></title>
+	    <b:elseif cond='data:blog.pageType == &quot;error_page&quot;'/>
+	        <title>404: Page Not Found | <data:blog.title/></title>
+	    <b:elseif cond='data:blog.pageType != &quot;item&quot;'/>
+	        <title><data:blog.pageName/></title>
+	    </b:if>
+	</b:if>
+    <!-- meta title end -->
+    <!-- CSS & JS ext start -->
+    <script src='https://code.jquery.com/jquery-1.7.2.js'/>
+  	<script crossorigin='anonymous' integrity='sha512-FbYPxnQcMs4BHQKuh40J9WvQH+Xs5ee1aUJIeYNTXAEUPDHKyoDydw5MmpeiT+2t96HYjsFKv2232q8yW9niaQ==' referrerpolicy='no-referrer' src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js'/>
+  	<link crossorigin='anonymous' href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.8.16/themes/smoothness/jquery-ui.css' integrity='sha512-IETLzX0T7zPIZS2m76h004pzWAZPI66ZqICKvASDJyv7K6J/oTGNxUUp9eRtSpZBQSu9jaIRr2NjiP1Y4+zXgQ==' referrerpolicy='no-referrer' rel='stylesheet'/>
+  	<script crossorigin='anonymous' integrity='sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==' referrerpolicy='no-referrer' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'/>
+  	<link crossorigin='anonymous' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css' integrity='sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==' referrerpolicy='no-referrer' rel='stylesheet'/>
+  	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,700i,900' rel='stylesheet'/>
+  	<link href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'/>
+  	<link crossorigin='anonymous' href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css' integrity='sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0' rel='stylesheet'/>
+  	<script type='text/javascript'>//<![CDATA[var jq=$.noConflict();jq((function(){jq(document).ready((function(){jq("#search_data").autocomplete({delay:100,source:function(e,c){var o="https://suggestqueries.google.com/complete/search?client=firefox&cp=2&hl=en&q=%QUERY";o=o.replace("%QUERY",e.term),jq.ajax({method:"GET",dataType:"jsonp",jsonpCallback:"jsonCallback",url:o}).success((function(e){c(e[1])}))}})}))}));//]]></script>
+    <!-- CSS & JS ext end -->
+    <b:skin><![CDATA[]]></b:skin>
+    <!-- CSS int start -->
+    <sytle>::selection {background-color: rgb(255, 229, 209);}a {text-decoration: none;}.text-theme-color {color: #0d6efd;}h1, h2, h3 {font-weight: bold;}h2 {margin-top: 1.75rem;margin-bottom: 1rem;}img {max-width: 100%;height: auto;}.item-snippet {text-align: justify;}.sticky-top, .navbar, .dropdown-menu {background-color: rgb(37,41,47);border-color:rgb(81,90,98);}tr {background-color: rgb(247,248,250);}tr:hover {background-color: rgb(247,248,250);}#navbarDropdown:hover {background-color:rgb(71,77,87);}#navbarDropdown:focus {outline: none !important;}.dropdown-item {color: white;}.dropdown-item:hover {color: black;}.navbar-brand:hover, .navbar-nav &gt;a.nav-link:hover {color: orange !important;}.yt-red {color: red;border-color: red;}.yt-red:hover {background-color: red;border-color: red;}.ig-orange {color: orange;border-color: orange;}.ig-orange:hover {background-color: orange;border-color: orange;}.line-green {color: #03C755;border-color: #03C755;}.line-green:hover {border-color: #03C755;background-color: #03C755;}.twitter-blue {color: #1EA1F1;border-color: #1EA1F1;}.twitter-blue:hover {border-color: #1EA1F1;background-color: #1EA1F1;}.facebook-blue {color: #2D88FF;border-color: #2D88FF;}.facebook-blue:hover {border-color: #2D88FF;background-color: #2D88FF;}.purple {color: #A96FFF;border-color: #A96FFF;}.purple:hover {border-color: #A96FFF;background-color: #A96FFF;}.GitHub-white {color: rgb(205,217,229);border-color: rgb(205,217,229);}.GitHub-white:hover {color: rgb(45,51,59);border-color: rgb(205,217,229);background-color: rgb(205,217,229);}.Share-btn {color: rgb(71,77,87);border-color: rgb(71,77,87);}.Share-btn:hover {color: white;border-color: rgb(71,77,87);background-color: rgb(71,77,87);}.badge {color: rgb(29,111,220);background-color: rgb(221,244,255);}.badge:hover {color: white;background-color: rgb(29,111,220);}.position-sticky &gt;.card {background-color:rgb(247,248,250);}@media (prefers-color-scheme: dark) {body {background-color: rgb(34,39,46);}::selection {color: white;background-color: rgb(255, 229, 209);}tr {color: rgb(205,217,229);background-color: rgb(45,51,59);border-color: rgb(205,217,229);}tr:hover {color: rgb(45,51,59);background-color: rgb(205,217,229);border-color: rgb(45,51,59);}.sticky-top, .navbar, .dropdown-menu {background-color: rgb(45,51,59);}.navbar-nav &gt;a.active {color: rgb(205,217,229) !important;}.card {color: rgb(205,217,229);background-color: rgb(34,39,46);border-color: rgb(67,76,86);}a, .btn-outline-primary {color: rgb(84,155,245);border-color: rgb(84,155,245);}.text-theme-color {color: rgb(84,155,245);}.btn-outline-primary:hover {border-color: rgb(84,155,245);background-color: rgb(84,155,245);}.badge {color: rgb(84,155,245);background-color: rgb(39,52,73);}.badge:hover {color: white;background-color: rgb(84,155,245);}.position-sticky &gt;.card {background-color:rgb(45,51,59);}.Share-btn {color: rgb(205,217,229);border-color: rgb(205,217,229);}.Share-btn:hover {color: rgb(34,39,46);border-color: rgb(205,217,229);background-color: rgb(205,217,229);}}</sytle>
+    <!-- CSS int end -->
+    <!-- JS int start -->
+    <script>
+    /*<![CDATA[*/ var uri = window.location.toString(); if (uri.indexOf("%3D","%3D") > 0) { var clean_uri = uri.substring(0, uri.indexOf("%3D")); window.history.replaceState({}, document.title, clean_uri);} var uri = window.location.toString(); if (uri.indexOf("%3D%3D","%3D%3D") > 0) { var clean_uri = uri.substring(0, uri.indexOf("%3D%3D")); window.history.replaceState({}, document.title, clean_uri);} var uri = window.location.toString(); if (uri.indexOf("&m=1","&m=1") > 0) { var clean_uri = uri.substring(0, uri.indexOf("&m=1")); window.history.replaceState({}, document.title, clean_uri); } var uri = window.location.toString(); if (uri.indexOf("?m=1","?m=1") > 0) { var clean_uri = uri.substring(0, uri.indexOf("?m=1"));window.history.replaceState({}, document.title, clean_uri);}; var protocol=window.location.protocol.replace(/\:/g,''); if(protocol=='http'){ var url=window.location.href.replace('http','https'); window.location.replace(url);} /*]]>*/
+  	</script>
+    <!-- JS int end -->
+  </head>
+
+  <body>
+    <b:section id='header'/>
+  </body>
+    
+</html>
